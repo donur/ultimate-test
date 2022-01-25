@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* Daha güzel olacak! Üzerinde çalışıyorum... 25.01.2022 */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #f5f7fa;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #34495e;
+  padding: 9px 0;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+body nav ul li {
+  list-style-type: none;
+}
+
+body nav ul li a {
+  color: #fff;
+  padding: 20px;
+}
+
+body nav ul li a:hover {
+  background: #22303d;
+}
+
+body nav .search input {
+  width: 394px;
+  height: 40px;
+  margin-right: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+body nav .search input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+body nav .search input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+body nav .search input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+body nav .search input::placeholder {
+  font-style: italic;
+}
+
+body .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .main-container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .main-container .products .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: .5em;
+}
+
+body .main-container .products .categories .category {
+  padding: 17.5px;
+  margin: 2px;
+  border: 1px solid #c8cfd8;
+  border-radius: 5px;
+  background: #e6e9ed;
+  color: #424A54;
+}
+
+body .main-container .products .categories .category:hover {
+  background: #c8cfd8;
+}
+
+body .main-container .products .categories .active {
+  background: #bac2cd;
+  color: #424A54;
+}
+
+body .main-container .products .categories .active:hover {
+  background: #abb5c2;
+}
+
+body .main-container .products .item-group-wrapper {
+  overflow-y: scroll;
+}
+
+body .main-container .products .item-group-wrapper .item-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main-container .products .item-group-wrapper .item-group .item {
+  padding: 50px 35px;
+  margin: .5em .5em;
+  border-radius: 5px;
+  background: #9b59b6;
+  color: #fff;
+}
+
+body .main-container .products .item-group-wrapper .item-group .item:hover {
+  background: #804399;
+}
+
+body .main-container .register-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-container .register-wrapper .customer input {
+  height: 40px;
+  width: 394px;
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+body .main-container .register-wrapper .customer input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+body .main-container .register-wrapper .customer input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+body .main-container .register-wrapper .customer input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+body .main-container .register-wrapper .customer input::placeholder {
+  font-style: italic;
+}
+
+body .main-container .register-wrapper .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 400px;
+  margin: 1em 2em;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background: #fff;
+}
+
+body .main-container .register-wrapper .register .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main-container .register-wrapper .register .products .product-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #fff;
+}
+
+body .main-container .register-wrapper .register .products .product-bar:first-child {
+  margin-top: 1em;
+}
+
+body .main-container .register-wrapper .register .products .product-bar:hover {
+  background: #e6e6e6;
+}
+
+body .main-container .register-wrapper .register .products .selected {
+  background: #68b3c8;
+  color: #fff;
+}
+
+body .main-container .register-wrapper .register .products .selected:hover {
+  background: #44a0b9;
+}
+
+body .main-container .register-wrapper .register .pay-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main-container .register-wrapper .register .pay-button a {
+  padding: 10px 125px;
+  margin: 1em 0;
+  border-radius: 5px;
+  background: #42a07f;
+  color: #fff;
+}
+
+body .main-container .register-wrapper .register .pay-button a:hover {
+  background: #3b8e71;
+}
+/*# sourceMappingURL=style.css.map */
